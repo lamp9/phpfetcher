@@ -57,3 +57,34 @@ phpfetcher是一个通用数据后台，可十分方便地查询、关联、进�
 		5. 使用Vue.js对页面进行数据二次渲染
 	4. 通过extends Phpfetcher\logic\BaseController的class是可进行二次开发的Controller类以实现更复杂的任务分发需求
 	5. 通过extends Phpfetcher\logic\model\BaseModel的class是可进行二次开发的Model类以实现更复杂的数据处理需求
+###部署
+1. 安装composer
+2. 安装Composer Asset插件
+	1. 命令行输入:composer global require "fxp/composer-asset-plugin:1.0.0"
+3. 安装yii2高级应用程序模板
+	1. cd到安装路径
+	2. 命令行输入:composer create-project yiisoft/yii2-app-advanced DIRNAME 2.0.4
+	3. DIRNAME位安装的文件夹名称
+4. 下载lamp9/phpfetcher仓库
+	1. cd到安装路径
+	2. 命令行输入:git clone https://github.com/lamp9/phpfetcher.git
+5. 修改程序配置
+	1. 修改程序web/index.php中$framework_dir变量为yii2框架根目录
+	2. 修改config/main.php中db的配置
+	3. 导入admin.sql到mysql数据库
+	4. cd到yii2程序根目录，修改composer.json,psr-4元素中增加本程序的web目录的决定路径，并在命令行运行:composer update
+	5. 如本项目运行在nginx下，则设置为
+		location / {
+			if (!-e $request_filename) {
+				rewrite ^/([\w-]+)/([\w-]+)\?[\w-]+$ /index.php?r=$1/$2&$query_string last;
+				rewrite ^/([\w-]+)/([\w-]+)$ /index.php?r=$1/$2 last;
+			}
+	    	}
+	6. 如本项目运行在apache下(本项目已默认设置.htaccess)，则设置为
+		<IfModule mod_rewrite.c>
+			RewriteEngine On
+			RewriteCond %{REQUEST_FILENAME} !-d
+			RewriteCond %{REQUEST_FILENAME} !-f
+			RewriteRule ^([\w-]+)/([\w-]+)$ index.php?r=$1/$2 [QSA,L]
+		</IfModule>
+	7. 部署完成后输入用户名:root,密码:123则可使用本系统
