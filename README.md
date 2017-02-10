@@ -73,18 +73,18 @@ phpfetcher是一个通用数据后台，可十分方便地查询、关联、进�
 	2. 修改config/main.php中db的配置
 	3. 导入admin.sql到mysql数据库
 	4. cd到yii2程序根目录，修改composer.json,psr-4元素中增加本程序的web目录的决定路径，并在命令行运行:composer update
-	5. 如本项目运行在nginx下，则设置为
-		location / {
-			if (!-e $request_filename) {
-				rewrite ^/([\w-]+)/([\w-]+)\?[\w-]+$ /index.php?r=$1/$2&$query_string last;
-				rewrite ^/([\w-]+)/([\w-]+)$ /index.php?r=$1/$2 last;
-			}
-	    	}
-	6. 如本项目运行在apache下(本项目已默认设置.htaccess)，则设置为
-		<IfModule mod_rewrite.c>
-			RewriteEngine On
-			RewriteCond %{REQUEST_FILENAME} !-d
-			RewriteCond %{REQUEST_FILENAME} !-f
-			RewriteRule ^([\w-]+)/([\w-]+)$ index.php?r=$1/$2 [QSA,L]
-		</IfModule>
+	5. 如本项目运行在nginx下，则设置为<br>
+		location / {<br>
+			if (!-e $request_filename) {<br>
+				rewrite ^/([\w-]+)/([\w-]+)\?[\w-]+$ /index.php?r=$1/$2&$query_string last;<br>
+				rewrite ^/([\w-]+)/([\w-]+)$ /index.php?r=$1/$2 last;<br>
+			}<br>
+	    	}<br>
+	6. 如本项目运行在apache下(本项目已默认设置.htaccess)，则设置为<br>
+		<IfModule mod_rewrite.c><br>
+			RewriteEngine On<br>
+			RewriteCond %{REQUEST_FILENAME} !-d<br>
+			RewriteCond %{REQUEST_FILENAME} !-f<br>
+			RewriteRule ^([\w-]+)/([\w-]+)$ index.php?r=$1/$2 [QSA,L]<br>
+		</IfModule><br>
 	7. 部署完成后输入用户名:root,密码:123则可使用本系统
