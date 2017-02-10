@@ -55,6 +55,17 @@ phpfetcher是一个通用数据后台，可十分方便地查询、关联、进�
 		3. 渲染公共分页
 		4. 渲染新增、更新页面
 		5. 使用Vue.js对页面进行数据二次渲染
+		6. 字段可渲染组件
+			1. text
+			2. textarea
+			3. radio
+			4. checkbox
+			5. select
+			6. ueditor
+			7. timepicker
+			8. file
+			9. images
+			10. 关联数据模型可通过灵活的条件进行搜索并渲染select/radio/checkbox
 	4. 通过extends Phpfetcher\logic\BaseController的class是可进行二次开发的Controller类以实现更复杂的任务分发需求
 	5. 通过extends Phpfetcher\logic\model\BaseModel的class是可进行二次开发的Model类以实现更复杂的数据处理需求
 ###部署
