@@ -81,10 +81,10 @@ phpfetcher是一个通用数据后台，可十分方便地查询、关联、进�
 			}<br>
 	    	}<br>
 	6. 如本项目运行在apache下(本项目已默认设置.htaccess)，则设置为<br>
-		<IfModule mod_rewrite.c><br>
+		\<IfModule mod_rewrite.c><br>
 			RewriteEngine On<br>
 			RewriteCond %{REQUEST_FILENAME} !-d<br>
 			RewriteCond %{REQUEST_FILENAME} !-f<br>
 			RewriteRule ^([\w-]+)/([\w-]+)$ index.php?r=$1/$2 [QSA,L]<br>
-		</IfModule><br>
+		\</IfModule><br>
 	7. 部署完成后输入用户名:root,密码:123则可使用本系统
