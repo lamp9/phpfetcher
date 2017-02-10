@@ -46,7 +46,7 @@ phpfetcher是一个通用数据后台，可十分方便地查询、关联、进�
 		2. 分页
 		3. 数据表关联
 		4. 数据过滤验证
-		5. HTML渲染配置(列表、创建、更新、删除、各按钮操作)
+		5. HTML渲染配置(列表、创建、更新、删除、各按钮操作)6
 		6. 自定义HTML输出
 		7. Insert/Update/Delete
 	3. 自定义widget
@@ -68,6 +68,7 @@ phpfetcher是一个通用数据后台，可十分方便地查询、关联、进�
 			10. 关联数据模型可通过灵活的条件进行搜索并渲染select/radio/checkbox
 	4. 通过extends Phpfetcher\logic\BaseController的class是可进行二次开发的Controller类以实现更复杂的任务分发需求
 	5. 通过extends Phpfetcher\logic\model\BaseModel的class是可进行二次开发的Model类以实现更复杂的数据处理需求
+	6. 可扫描数据库并生成所有表基本配置，包括创表SQL，字段标签，字段验证规则，此后可修改相应记录即可对表的个性化调整，包括字段标签，字段验证规则，搜索条件设置，数据列表设置，数据操作限制，字段编辑输入框样式和关联数据筛选。如无特殊需要，此过程不需再编写PHP或HTML等前端文件
 ###部署
 1. 安装composer
 2. 安装Composer Asset插件
