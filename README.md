@@ -54,7 +54,7 @@ phpfetcher是一个通用数据后台，可十分方便地查询、关联、进�
 		2. 渲染公共列表、表头排序、表头固定
 		3. 渲染公共分页、pageSize设置
 		4. 渲染新增、更新页面
-		5. 使用Vue.js对页面进行数据二次渲染
+		5. 使用Vue.js对页面进行数据二次渲染，实现数据和组件双向绑定
 		6. 字段可渲染组件
 			1. text
 			2. textarea
@@ -66,6 +66,8 @@ phpfetcher是一个通用数据后台，可十分方便地查询、关联、进�
 			8. file
 			9. images
 			10. 关联数据模型可通过灵活的条件进行搜索并渲染select/radio/checkbox/text
+		7. 新增/更新使用AJAX提交表单
+		8. 使用H-ui.admin v2.4、H-ui v2.3实现前端框架布局
 	4. 通过extends Phpfetcher\logic\BaseController的class是可进行二次开发的Controller类以实现更复杂的任务分发需求
 	5. 通过extends Phpfetcher\logic\model\BaseModel的class是可进行二次开发的Model类以实现更复杂的数据处理需求
 	6. 可扫描数据库并生成所有表基本配置，包括创表SQL，字段标签，字段验证规则，此后可修改相应记录即可对表的个性化调整，包括字段标签，字段验证规则，搜索条件设置，数据列表设置，数据操作限制，字段编辑输入框样式和关联数据筛选。如无特殊需要，此过程不需再编写PHP或HTML等前端文件
