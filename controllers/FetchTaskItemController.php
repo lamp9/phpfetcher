@@ -1,8 +1,8 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
-use Phpfetcher\logic\BaseController;
-use Phpfetcher\widget\AdminListConfig;
+use app\logic\BaseController;
+use app\widget\AdminListConfig;
 class FetchTaskItemController extends BaseController{
 	public function actionCreate()
 	{

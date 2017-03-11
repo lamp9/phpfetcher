@@ -1,8 +1,8 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
 use Yii;
-use Phpfetcher\models\ActivityBeautySchool;
-use Phpfetcher\logic\BaseController;
+use app\models\ActivityBeautySchool;
+use app\logic\BaseController;
 
 class SystemConfigController extends BaseController{}

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<?php use Phpfetcher\widget\AdminList;?>
+<?php use app\widget\AdminList;?>
 <?php echo AdminList::widget(['type' => 'common-css']);?>
 <?php echo AdminList::widget(['type' => 'common-js']);?>
 </head>

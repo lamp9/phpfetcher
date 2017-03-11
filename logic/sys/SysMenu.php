@@ -1,12 +1,12 @@
 <?php
-namespace Phpfetcher\logic\sys;
+namespace app\logic\sys;
 
 use Yii;
-use Phpfetcher\models\SysUserMenu;
-use Phpfetcher\models\SysUserAuthority;
-use Phpfetcher\models\SysUserGroup;
-use Phpfetcher\widget\AdminListConfig;
-use Phpfetcher\logic\sys\SysAuthority;
+use app\models\SysUserMenu;
+use app\models\SysUserAuthority;
+use app\models\SysUserGroup;
+use app\widget\AdminListConfig;
+use app\logic\sys\SysAuthority;
 
 class SysMenu
 {

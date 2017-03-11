@@ -1,9 +1,9 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
 use Yii;
-use Phpfetcher\widget\AdminListConfig;
-use Phpfetcher\logic\BaseController;
+use app\widget\AdminListConfig;
+use app\logic\BaseController;
 
 class CacheController extends BaseController
 {

@@ -1,11 +1,11 @@
 <?php
-namespace Phpfetcher\logic\model;
+namespace app\logic\model;
 
 use Yii;
-use Phpfetcher\widget\AdminListConfig;
-use Phpfetcher\models\FetchTaskItem;
-use Phpfetcher\logic\Params;
-use Phpfetcher\logic\model\BaseModel;
+use app\widget\AdminListConfig;
+use app\models\FetchTaskItem;
+use app\logic\Params;
+use app\logic\model\BaseModel;
 class FetcherAutoModel extends BaseModel
 {
 	public static $db, $config, $tbId, $globalVar;

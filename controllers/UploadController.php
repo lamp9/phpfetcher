@@ -1,10 +1,10 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
 use Yii;
 use yii\web\Controller;
 use Common\componts\Uploader;
-use Phpfetcher\logic\sys\SysAuthority;
+use app\logic\sys\SysAuthority;
 class UploadController extends Controller
 {
 	public function beforeAction($action){

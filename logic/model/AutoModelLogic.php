@@ -1,11 +1,11 @@
 <?php
-namespace Phpfetcher\logic\model;
+namespace app\logic\model;
 
 use Yii;
 use yii\db\Connection;
-use Phpfetcher\models\FetchTask;
-use Phpfetcher\models\FetchTaskItem;
-use Phpfetcher\logic\Params;
+use app\models\FetchTask;
+use app\models\FetchTaskItem;
+use app\logic\Params;
 class AutoModelLogic{
 	public static function getDbLink($dbInfo){
 		$dbName = ('' != $dbInfo->db) ? "dbname={$dbInfo->db}" : '';

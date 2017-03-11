@@ -1,5 +1,5 @@
 <?php
-namespace Phpfetcher\logic\fetch;
+namespace app\logic\fetch;
 
 class Regular{
 	public function get($config, $reg){

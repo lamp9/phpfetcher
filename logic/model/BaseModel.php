@@ -1,8 +1,8 @@
 <?php
-namespace Phpfetcher\logic\model;
+namespace app\logic\model;
 
-use Phpfetcher\widget\AdminListConfig;
-use Phpfetcher\logic\sys\LogCommon;
+use app\widget\AdminListConfig;
+use app\logic\sys\LogCommon;
 
 class BaseModel extends \yii\db\ActiveRecord
 {

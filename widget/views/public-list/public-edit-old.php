@@ -1,5 +1,5 @@
 <?php
-use Phpfetcher\widget\AdminListConfig;
+use app\widget\AdminListConfig;
 $fieldConfig = $model->ListField();
 $field_key = $fieldConfig['field_key'];
 $fields = $fieldConfig['field'];

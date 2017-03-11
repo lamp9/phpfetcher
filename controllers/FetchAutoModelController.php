@@ -1,13 +1,13 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
 use Yii;
-use Phpfetcher\widget\AdminListConfig;
-use Phpfetcher\logic\BaseController;
-use Phpfetcher\logic\Params;
-use Phpfetcher\logic\model\ReturnFetcherAutoModel;
+use app\widget\AdminListConfig;
+use app\logic\BaseController;
+use app\logic\Params;
+use app\logic\model\ReturnFetcherAutoModel;
 class FetchAutoModelController extends BaseController{
-	public $model = '\\Phpfetcher\\logic\\model\\FetcherAutoModel';
+	public $model = '\\app\\logic\\model\\FetcherAutoModel';
 
 	public function actionSearchResult(){
 		$CM = $this->getSearchModelAndCondition();

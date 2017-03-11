@@ -1,10 +1,10 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
 use Yii;
-use Phpfetcher\logic\sys\SysRole;
-use Phpfetcher\logic\sys\SysAuthority;
-use Phpfetcher\logic\BaseController;
+use app\logic\sys\SysRole;
+use app\logic\sys\SysAuthority;
+use app\logic\BaseController;
 class SysUserGroupController extends BaseController
 {
 	/**
@@ -18,8 +18,8 @@ class SysUserGroupController extends BaseController
 			'/sys-user-menu/group-set',
 			[
 				'model' => $model,
-				'menu' => \Phpfetcher\logic\sys\SysMenu::getList(),
-				'authority' => \Phpfetcher\logic\sys\SysAuthority::getListConfig($id),
+				'menu' => \app\logic\sys\SysMenu::getList(),
+				'authority' => \app\logic\sys\SysAuthority::getListConfig($id),
 			]);
 	}
 

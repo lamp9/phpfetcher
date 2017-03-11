@@ -1,5 +1,5 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
 use Yii;
 use yii\base\InvalidParamException;

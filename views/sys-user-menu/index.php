@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-<?php use Phpfetcher\widget\AdminList;
+<?php use app\widget\AdminList;
 $controller = '/'.Yii::$app->controller->id.'/';
 echo AdminList::widget(['type' => 'common-css']);
 echo AdminList::widget(['type' => 'common-js']);?>

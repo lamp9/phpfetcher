@@ -1,5 +1,5 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
-use Phpfetcher\logic\BaseController;
+use app\logic\BaseController;
 class LogAdminController extends BaseController{}

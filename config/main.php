@@ -10,7 +10,7 @@ return [
 	'id' => 'app-frontend',
 	'basePath' => dirname(__DIR__),
 	'bootstrap' => ['log'],
-	'controllerNamespace' => 'Phpfetcher\controllers',
+	'controllerNamespace' => 'app\controllers',
 	'defaultRoute' => 'index/index',
 	'components' => [
 		'db' => [

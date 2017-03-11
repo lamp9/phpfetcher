@@ -1,9 +1,9 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
 use Yii;
-use Phpfetcher\logic\sys\SysMenu;
-use Phpfetcher\logic\BaseController;
+use app\logic\sys\SysMenu;
+use app\logic\BaseController;
 class SysUserMenuController extends BaseController
 {
     public function actionIndex(){

@@ -1,7 +1,7 @@
 <div class="text-c" id="search">
 	<?php
 	//use Yii;
-	use Phpfetcher\logic\Params;
+	use app\logic\Params;
 	$get = Yii::$app->request->get();
 	$holdModelArgs = Params::getParamsChild(['holdArgs', 'model']);
 	$holdCommonArgs = Params::getParamsChild(['holdArgs', 'common']);

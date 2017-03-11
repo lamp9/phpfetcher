@@ -1,8 +1,8 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
-use Phpfetcher\widget\AdminListConfig;
-use Phpfetcher\logic\BaseController;
+use app\widget\AdminListConfig;
+use app\logic\BaseController;
 
 class SysUserController extends BaseController
 {

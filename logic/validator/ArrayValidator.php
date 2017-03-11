@@ -1,5 +1,5 @@
 <?php
-namespace Phpfetcher\logic;
+namespace app\logic;
 use Yii;
 
 class ArrayValidator extends yii\validators\Validator

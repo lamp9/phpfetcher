@@ -1,10 +1,10 @@
 <?php
-namespace Phpfetcher\logic\sys;
+namespace app\logic\sys;
 
 use Yii;
 use yii\captcha\CaptchaValidator;
-use Phpfetcher\models\SysUser;
-use Phpfetcher\logic\sys\LogCommon;
+use app\models\SysUser;
+use app\logic\sys\LogCommon;
 
 class SysLogin
 {

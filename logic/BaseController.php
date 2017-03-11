@@ -1,13 +1,13 @@
 <?php
-namespace Phpfetcher\logic;
+namespace app\logic;
 
-use Phpfetcher\widget\AdminListConfig;
-use Phpfetcher\logic\sys\SysLogin;
-use Phpfetcher\logic\sys\SysAuthority;
+use app\widget\AdminListConfig;
+use app\logic\sys\SysLogin;
+use app\logic\sys\SysAuthority;
 
 class BaseController extends \yii\web\Controller
 {
-	public $modelPrimaryNameSpace = '\\Phpfetcher\\models\\', $model = null;
+	public $modelPrimaryNameSpace = '\\app\\models\\', $model = null;
 
 	public function __construct($id, \yii\base\Module $module, array $config = [])
 	{

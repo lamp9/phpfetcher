@@ -1,9 +1,9 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
 use Yii;
-use Phpfetcher\logic\BaseController;
-use Phpfetcher\logic\model\AutoModelLogic;
+use app\logic\BaseController;
+use app\logic\model\AutoModelLogic;
 class FetchTaskController extends BaseController{
 
 	public function actionConfigTable(){

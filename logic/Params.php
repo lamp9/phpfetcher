@@ -1,5 +1,5 @@
 <?php
-namespace Phpfetcher\logic;
+namespace app\logic;
 
 use Yii;
 class Params{

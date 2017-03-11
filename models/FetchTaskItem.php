@@ -1,10 +1,10 @@
 <?php
-namespace Phpfetcher\models;
+namespace app\models;
 
 use Yii;
-use Phpfetcher\widget\AdminListConfig;
-use Phpfetcher\logic\model\BaseModel;;
-use Phpfetcher\logic\Params;
+use app\widget\AdminListConfig;
+use app\logic\model\BaseModel;;
+use app\logic\Params;
 
 /**
  * This is the model class for table "fetch_task_item".

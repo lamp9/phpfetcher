@@ -1,8 +1,8 @@
 <?php
-namespace Phpfetcher\logic\model;
+namespace app\logic\model;
 
 use Yii;
-use Phpfetcher\widget\AdminListConfig;
+use app\widget\AdminListConfig;
 
 class AutoModel extends BaseModel
 {

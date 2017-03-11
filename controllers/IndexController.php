@@ -1,8 +1,8 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
-use Phpfetcher\logic\sys\SysLogin;
-use Phpfetcher\logic\sys\SysAuthority;
+use app\logic\sys\SysLogin;
+use app\logic\sys\SysAuthority;
 use Yii;
 use yii\web\Controller;
 

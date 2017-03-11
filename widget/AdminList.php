@@ -1,8 +1,8 @@
 <?php
-namespace Phpfetcher\widget;
+namespace app\widget;
 
 use yii\base\Widget;
-use Phpfetcher\logic\Params;
+use app\logic\Params;
 class AdminList extends Widget
 {
 	public $type;

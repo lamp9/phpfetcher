@@ -1,11 +1,11 @@
 <?php
-namespace Phpfetcher\logic\sys;
+namespace app\logic\sys;
 
-use Phpfetcher\models\LogAdmin;
-use Phpfetcher\models\LogPay;
-use Phpfetcher\models\LogMessageSend;
-use Phpfetcher\models\LogSys;
-use Phpfetcher\logic\sys\SysLogin;
+use app\models\LogAdmin;
+use app\models\LogPay;
+use app\models\LogMessageSend;
+use app\models\LogSys;
+use app\logic\sys\SysLogin;
 use yii;
 
 class LogCommon

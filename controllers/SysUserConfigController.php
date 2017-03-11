@@ -1,10 +1,10 @@
 <?php
-namespace Phpfetcher\controllers;
+namespace app\controllers;
 
-use Phpfetcher\widget\AdminListConfig;
-use Phpfetcher\logic\sys\LogCommon;
-use Phpfetcher\logic\sys\SysLogin;
-use Phpfetcher\logic\BaseController;
+use app\widget\AdminListConfig;
+use app\logic\sys\LogCommon;
+use app\logic\sys\SysLogin;
+use app\logic\BaseController;
 use Yii;
 
 class SysUserConfigController extends BaseController

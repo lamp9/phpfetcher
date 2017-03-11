@@ -1,9 +1,9 @@
 <?php
-namespace Phpfetcher\models;
+namespace app\models;
 
 use Yii;
-use Phpfetcher\widget\AdminListConfig;
-use Phpfetcher\logic\model\BaseModel;;
+use app\widget\AdminListConfig;
+use app\logic\model\BaseModel;;
 
 /**
  * This is the model class for table "log_sys".

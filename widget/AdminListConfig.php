@@ -1,10 +1,10 @@
 <?php
-namespace Phpfetcher\widget;
+namespace app\widget;
 
 use Yii;
 use yii\data\ActiveDataProvider;
-use Phpfetcher\logic\sys\SysLogin;
-use Phpfetcher\logic\Params;
+use app\logic\sys\SysLogin;
+use app\logic\Params;
 class AdminListConfig
 {
 	public static function getActiveDataProviderSetting($query){
@@ -186,7 +186,7 @@ class AdminListConfig
 	 */
 	public static function setTable($public_button, $cols, $operation, $data, $model)
 	{
-		$SysAuthority = new \Phpfetcher\logic\sys\SysAuthority();
+		$SysAuthority = new \app\logic\sys\SysAuthority();
 		$user = SysLogin::getUser();
 		$Authority = $SysAuthority->getList($user->group_id);
 		$controllerId = Yii::$app->controller->id;
