@@ -99,21 +99,28 @@ $controller = '/' . Yii::$app->controller->id . '/'; ?>
 						//用于外键查询
 						case 'foreignKey' :
 							$kv = explode(':', $item['val']);
-							echo (isset($data->$kv[0]->$kv[1])) ? $data->$kv[0]->$kv[1] : '';
+							$kvKey = $kv[0];
+							$kvVal = $kv[1];
+							echo (isset($data->$kvKey->$kvVal)) ? $data->$kvKey->$kvVal : '';
 							break;
 						case 'foreignKeyAuto' :
 							$kv = explode(':', $item['val']);
-							$result = $data->getMagicModel($kv[0]);
-							echo $result->$kv[1];
+							$kvKey = $kv[0];
+							$kvVal = $kv[1];
+							$result = $data->getMagicModel($kvKey);
+							echo $result->$kvVal;
 							break;
 						//用于外键查询,$kvVal是数组
 						case 'foreignArr' :
 							$kv = explode(':', $item['val']);
-							$kvVal = $data->$kv[0];
-							echo (isset($kvVal[$kv[1]])) ? $kvVal[$kv[1]] : '';
+							$kvKey = $kv[0];
+							$kvVal = $kv[1];
+							$resultVal = isset($data->$kvKey) ? $data->$kvKey : [];
+							echo (isset($resultVal[$kvVal])) ? $resultVal[$kvVal] : '';
 							break;
 						case 'foreignVal' :
-							echo $data->$item['val'];
+							$kvVal = $item['val'];
+							echo isset($data->$kvVal) ? $data->$kvVal : '';
 							break;
 						case 'switch' :
 							echo (isset($item['val'][$data[$key]])) ? $item['val'][$data[$key]] : '';
