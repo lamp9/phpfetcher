@@ -140,7 +140,7 @@ class SysUser extends BaseModel implements IdentityInterface
 	}*/
 
 	/*public function returnGroupIds($type){
-		$arr = \Phpfetcher\models\SnsForumTag::getEnableAll();
+		$arr = \app\models\SnsForumTag::getEnableAll();
 		return AdminListConfig::returnSelect($type, $arr, 'id:tag_name:,');
 
 		$arr = ['4' => 'ggg', '8' => 'wwww', '7' => 'zzzz', '6' => 'bbbb', '3' => 'ttt'];

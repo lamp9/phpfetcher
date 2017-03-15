@@ -25,13 +25,13 @@ return [
 			'cookieValidationKey' => 'KYdw8qrVpJAuLCMqjei4H0cu89nFyOmE',
 		],
 		'user' => [
-			'identityClass' => 'Phpfetcher\models\SysUser',
+			'identityClass' => 'app\models\SysUser',
 			'enableAutoLogin' => true,
 			'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
 		],
 		'admin' => [
 			'class' => 'yii\web\User',
-			'identityClass' => 'Phpfetcher\models\SysUser',
+			'identityClass' => 'app\models\SysUser',
 			'enableAutoLogin' => true,
 			'identityCookie' => ['name' => '_identity-phpfetcher', 'httpOnly' => true],
 		],
